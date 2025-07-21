@@ -5,6 +5,8 @@ mod control_flow_test;
 mod ownership_test;
 mod ToDoItem;
 mod iterator_test;
+mod structure_test;
+mod enum_test;
 
 fn main() {
 
@@ -15,6 +17,8 @@ fn main() {
     // ownership_test::ownership_test();
     // ToDoItem::main();
     // ToDoItem::output();
-    iterator_test::main();
+    // iterator_test::main();
+    // structure_test::main();
+    enum_test::main();
 
 }
