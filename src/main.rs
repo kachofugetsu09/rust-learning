@@ -8,6 +8,8 @@ mod iterator_test;
 mod structure_test;
 mod enum_test;
 mod collection_test;
+mod trait_test;
+mod lifetime;
 
 use std::collections::{hash_map, HashMap};
 use std::iter::Map;
@@ -26,6 +28,8 @@ fn main() {
     // structure_test::main();
     // enum_test::main();
     // let hash_map: HashMap<String, String> = HashMap::<String,String>::new();
-    collection_test::main();
+    // collection_test::main();
+    // trait_test::main();
+    lifetime::main();
 
 }
