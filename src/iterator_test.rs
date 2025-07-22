@@ -1,5 +1,5 @@
 pub fn main(){
-    let mut a = vec![1,2,3,4,5];
+    let a = vec![1,2,3,4,5];
     let mut b = Vec::new();
     for i in a.into_iter(){
         if i%2==0{

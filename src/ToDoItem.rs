@@ -105,7 +105,7 @@ pub(crate) fn output(){
 
     println!("原始列表：{:?}", inital_tasks.len());
     //转移inital_task的所有权
-    let mut manager = ToDoListManager::new(inital_tasks);
+    let  manager = ToDoListManager::new(inital_tasks);
     let filtered_tasks = process_and_return_new_list(manager.tasks);
 
     println!("处理后的待办事项列表：{:?}", filtered_tasks.len());

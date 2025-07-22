@@ -35,7 +35,7 @@ fn test_takes_ownership(){
 
     let x = 5;
     makes_copy(x);
-    let y = x; // 这行不会报错，因为i32是一个Copy类型，x的值被复制给了y
+    let _y = x; // 这行不会报错，因为i32是一个Copy类型，x的值被复制给了y
 }
 
 fn takes_ownership(some_string: String){
@@ -47,9 +47,9 @@ fn makes_copy(some_integer: i32){
 }
 
 fn test_giving_ownership(){
-    let s1 = gives_ownership();
+    let _s1 = gives_ownership();
     let s2 = String::from("hello");
-    let s3 = takes_and_gives_back(s2);
+    let _s3 = takes_and_gives_back(s2);
 }
 
 fn gives_ownership() -> String {
@@ -91,7 +91,7 @@ fn change(some_string: &mut String){
 fn only_one_test(){
     let mut s = String::from("hello");
 
-    let r1 = &mut s;
+    let _r1 = &mut s;
     //这里会报错。因为同一时间只能有一个可变引用。
     // let r2 = &mut s;
 
